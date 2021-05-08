@@ -1,26 +1,12 @@
-import logo from './logo.svg'
-import './App.css'
 import UrqlProvider from './UrqlProvider'
+import AccountInfo from './AccountInfo'
+import LoginForm from './LoginForm'
 
 function App() {
   return (
     <UrqlProvider>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <AccountInfo />
+      <LoginForm />
     </UrqlProvider>
   )
 }
